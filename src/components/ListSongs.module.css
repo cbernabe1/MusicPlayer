@@ -1,0 +1,72 @@
+@import "../var.css";
+
+.container{
+    background-color: var(--color-secondary);
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+.header{
+    color: var(--color-text);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.listSongs{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.listItem{
+    background-color: var(--color-tertiary);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.circle{
+    border-radius: 50%;
+    background-color: var(--color-reserve);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    animation: rotate-circle 10s infinite;
+}
+
+@keyframes rotate-circle {
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.img{
+    width: 50px;
+    height: 50px;
+}
+
+.details{
+    margin-left: 30px;
+    color: var(--color-secondary);
+}
+
+.title, .singer{
+    text-transform: capitalize;
+}
