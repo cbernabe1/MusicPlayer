@@ -8,6 +8,10 @@
     height: 500px;
 }
 
+.clicked{
+    display: none;
+}
+
 .header{
     color: var(--color-text);
     text-transform: uppercase;
@@ -25,8 +29,12 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 100%;
-    overflow: hidden;
+    overflow: scroll;
+    height: 420px;
+}
+
+.listSongs::-webkit-scrollbar{
+    display: none;
 }
 
 .listItem{
@@ -36,6 +44,12 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.listItem:hover{
+    background-color: var(--color-reserve);
 }
 
 .circle{
@@ -47,9 +61,13 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    animation: rotate-circle 10s infinite;
+    overflow: hidden;
+    position: relative;
 }
 
+.playing{
+    animation: rotate-circle 10s infinite;
+}
 @keyframes rotate-circle {
 
     100%{
@@ -69,4 +87,9 @@
 
 .title, .singer{
     text-transform: capitalize;
+}
+
+.playicon{
+    position: absolute;
+    color: #fff;
 }
