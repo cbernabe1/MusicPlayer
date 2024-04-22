@@ -1,0 +1,61 @@
+@import "../var.css";
+.container{
+    background-color: var(--color-secondary);
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image{
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.emptyimage{
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--color-reserve);
+}
+
+.indicator{
+    background-color: var(--color-reserve);
+    width: 100%;
+    height: 2px;
+}
+
+.controls{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skipPrev, .play, .skipNext{
+    font-size: 3rem;
+}
+
+.skipPrev:hover, .play:hover, .skipNext:hover{
+    color: var(--color-tertiary);
+}
+
+.btnplay{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
